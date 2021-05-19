@@ -31,6 +31,14 @@ public class TTSManager {
         });
     }
 
+    public void setSpeechPitchLevel(float level) {
+        textToSpeech.setPitch(level);
+    }
+
+    public void setSpeechRateLevel(float level) {
+        textToSpeech.setSpeechRate(level);
+    }
+
     public void speak(String ttsString) {
         textToSpeech.speak(ttsString, TextToSpeech.QUEUE_FLUSH, null, null);
     }

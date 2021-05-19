@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">VoiceNotice</string>
+    <string name="speech_rate_text">목소리 속도</string>
+    <string name="speech_pitch_text">목소리 높이</string>
+    <string name="voice_play_button_text">음성출력</string>
+    <string name="voice_edit_hint_text">내용을 입력하세요.</string>
+    <string name="load_data_text">불러오기</string>
+    <string name="save_data_text">저장하기</string>
 </resources>

@@ -6,31 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:id="@+id/voice_edit_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/shape_gray"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:lines="10"
-        android:minLines="10"
-        android:maxLines="10"
-        android:scrollbars="vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
 
-    <Button
-        android:id="@+id/voice_play_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/voice_edit_text"
-        android:layout_margin="8dp"
-        android:text="음성출력"/>
+            <EditText
+                android:id="@+id/voice_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_gray"
+                android:inputType="textMultiLine"
+                android:minLines="10"
+                android:padding="8dp"
+                android:gravity="top"
+                android:hint="@string/voice_edit_hint_text"/>
+
+            <TextView
+                android:id="@+id/speech_rate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/speech_rate_text"/>
+
+            <SeekBar
+                android:id="@+id/speech_rate_seek_bar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="5"/>
+
+            <TextView
+                android:id="@+id/speech_pitch_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/speech_pitch_text"/>
+
+            <SeekBar
+                android:id="@+id/speech_pitch_seek_bar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:progress="5"/>
+
+            <Button
+                android:id="@+id/voice_play_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/voice_play_button_text"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/load_data_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:layout_weight="3"
+                    android:text="@string/load_data_text"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/save_data_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:layout_weight="3"
+                    android:text="@string/save_data_text"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
