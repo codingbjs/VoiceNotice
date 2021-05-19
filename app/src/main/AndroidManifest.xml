@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VoiceNotice">
-        <activity android:name=".MainActivity"
+        <activity android:name=".voicedata.VoiceItemViewPagerActivity"></activity>
+        <activity android:name=".voicedata.VoiceItemListActivity" />
+        <activity android:name=".voicedata.VoiceItemActivity" />
+        <activity
+            android:name=".MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">

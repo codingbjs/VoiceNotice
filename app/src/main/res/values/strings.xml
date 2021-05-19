@@ -6,4 +6,52 @@
     <string name="voice_edit_hint_text">내용을 입력하세요.</string>
     <string name="load_data_text">불러오기</string>
     <string name="save_data_text">저장하기</string>
+    <string name="title_hint">제목을 입력하세요.</string>
+    <string name="cancel_text">취 소</string>
+    <string name="save_text">저 장</string>
+    <string name="voice_text_hint">내용을 입력하세요.</string>
+    <string name="voice_save_success">데이타를 저장하였습니다.</string>
+    <string name="delete_text">삭 제</string>
+    <string name="modify_text">수 정</string>
+
+    <string name="parking_info_title">
+        이동주차 안내
+    </string>
+
+    <string name="parking_info_voice">
+        관리실에서 안내드립니다.
+        \n차량번호 4,0,4,5, 흰색, 카니발, 차량, 차주분께서는,
+        \n다른 장소로 이동 주차하여주십시요.
+        \n다시한번 안내드립니다.
+        \n차량번호 4,0,4,5, 흰색, 카니발, 차량, 차주분께서는,
+        \n다른 장소로 이동 주차하여주십시요.
+        \n감사합니다.
+    </string>
+
+    <string name="issue_info_title">
+        코로나 19 방역 안내
+    </string>
+
+    <string name="issue_info_voice">
+        교통 정보센터 청사 관리실에서 코로나 일구, 방역준수 사항에 대하여 안내드립니다.
+        \n첫째.
+        \n청사 출입시 반드시 발열체크를 하시고, 입 출입 동선에 따라, 이동하여 주십시오.
+        \n둘째.
+        \n휴게실, 흡연실에서는, 다른 사람과 최소 일미터 이상, 거리를 유지하며,
+        \n대화는 최소로 자제하시고, 이용 후, 손 소독 등, 방역 수칙을, 준수하여 주십시오.
+        \n셋째.
+        \n마스크를 착용하는 것만으로도 코로나 일구, 감염을 크게 줄일 수 있는 만큼,
+        \n다소 불편하더라도, 마스크를 의무적으로 착용해야 하는 장소에서는,
+        \n반드시 마스크를 착용해 주시기 바랍니다.
+
+        \n마스크를 착용하지 않거나, 마스크를 착용했으나, 입과 코를 완전히 가리지 않은 경우,
+        \n위반 당사자는 십만원 이하의 과태료가 부과되며,
+        \n관리 운영자는, 관리 의무, 미준수로 삼백만원 이하의 과태료가, 부과될 수 있습니다.
+
+        \n이상.
+        \n교통 정보센터 청사 관리실에서 코로나 일구 방역 준수 사항에 대하여 안내 드렸습니다.
+        \n감사합니다.
+    </string>
+
+
 </resources>

@@ -1,8 +1,12 @@
 package com.codingbjs.voicenotice.util;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.PowerManager;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ArgParamManager {
 
@@ -11,6 +15,32 @@ public class ArgParamManager {
 
     public static final String FINISH = "Finish";
     public static final String PERMISSIONS_OK = "PermissionsOk";
+    public static final String NEW_VOICE_ITEM = "NewVoiceItem";
+    public static final String MODIFY_VOICE_ITEM = "ModifyVoiceItem";
+    public static final String DELETE_VOICE_ITEM = "DeleteVoiceItem";
+    public static final String GET_VOICE_ITEM = "GetVoiceItem";
+    public static final String MOVE_VIEW_PAGER = "MoveViewPager";
+
+
+
+    @SuppressLint("SimpleDateFormat")
+    public static final SimpleDateFormat day = new SimpleDateFormat("yyyy-MM-dd");//날짜 형식 변수
+
+    @SuppressLint("SimpleDateFormat")
+    public static final SimpleDateFormat time = new SimpleDateFormat("HH:mm:ss");//시간 형식 변수
+
+    @SuppressLint("SimpleDateFormat")
+    public static final SimpleDateFormat DATE_TIME = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//시간 형식 변수
+
+    public static final String ZERO_TIME = "0000-00-00 00:00:00";
+
+    public static String[] getDate(){
+        String[] nowDate = new String[2];
+        Date now = new Date(System.currentTimeMillis());
+        nowDate[0] = day.format(now);
+        nowDate[1] = time.format(now);
+        return nowDate;
+    }
 
 
     public static Intent getAllFlagsIntent(Context context, Class runActivity, String param1, String param2){
