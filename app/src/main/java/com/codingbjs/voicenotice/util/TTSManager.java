@@ -17,16 +17,22 @@ public class TTSManager {
 
     public TTSManager(Context context) {
         this.context = context;
-        init(context);
+        init(context, SPEECH_PITCH_LEVEL, SPEECH_RATE_LEVEL);
     }
 
-    private void init(Context context) {
+    public TTSManager(Context context, float pitchLevel, float rateLevel) {
+        this.context = context;
+        init(context, pitchLevel, rateLevel);
+    }
+
+
+    private void init(Context context,  float pitchLevel, float rateLevel) {
         textToSpeech = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 textToSpeech.setLanguage(Locale.KOREA);
-                textToSpeech.setPitch(SPEECH_PITCH_LEVEL);
-                textToSpeech.setSpeechRate(SPEECH_RATE_LEVEL);
+                textToSpeech.setPitch(pitchLevel);
+                textToSpeech.setSpeechRate(rateLevel);
             }
         });
     }
