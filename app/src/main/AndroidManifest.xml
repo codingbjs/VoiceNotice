@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VoiceNotice">
-        <activity android:name=".voicedata.VoiceItemViewPagerActivity"></activity>
+        <activity android:name=".activity.CarMoveActivity"></activity>
+        <activity android:name=".voicedata.VoiceItemViewPagerActivity" />
         <activity android:name=".voicedata.VoiceItemListActivity" />
         <activity android:name=".voicedata.VoiceItemActivity" />
         <activity

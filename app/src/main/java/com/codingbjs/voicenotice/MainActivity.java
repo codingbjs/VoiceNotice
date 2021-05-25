@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.SeekBar;
 
+import com.codingbjs.voicenotice.activity.CarMoveActivity;
 import com.codingbjs.voicenotice.databinding.ActivityMainBinding;
 import com.codingbjs.voicenotice.util.ArgParamManager;
 import com.codingbjs.voicenotice.util.TTSManager;
@@ -87,6 +88,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mainBinding.voiceStopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ttsManager.speakStop();
+            }
+        });
+
         mainBinding.saveDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,9 +115,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mainBinding.carMoveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(ArgParamManager.getAllFlagsIntent(getApplicationContext(),
+                        CarMoveActivity.class,null, null));
+            }
+        });
+
         if(voiceItemList.getVoiceItemList().size() == 0) {
             addVoiceItem();
         }
+
     }
 
     private void addVoiceItem() {

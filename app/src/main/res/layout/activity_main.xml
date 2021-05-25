@@ -61,19 +61,48 @@
                 android:max="9"
                 android:progress="5"/>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/voice_play_button"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_weight="7"
                 android:padding="8dp"
                 android:text="@string/voice_play_button_text"
                 android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/voice_stop_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="3"
+                android:padding="8dp"
+                android:text="정 지"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/car_move_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:layout_weight="3"
+                    android:text="이동\n주차"
+                    android:textSize="18sp"/>
 
                 <Button
                     android:id="@+id/load_data_button"
@@ -82,7 +111,7 @@
                     android:layout_margin="8dp"
                     android:padding="8dp"
                     android:layout_weight="3"
-                    android:text="@string/load_data_text"
+                    android:text="불러\n오기"
                     android:textSize="18sp"/>
 
                 <Button
@@ -92,7 +121,7 @@
                     android:layout_margin="8dp"
                     android:padding="8dp"
                     android:layout_weight="3"
-                    android:text="@string/save_data_text"
+                    android:text="새글\n등록"
                     android:textSize="18sp"/>
 
             </LinearLayout>

@@ -49,6 +49,11 @@ public class TTSManager {
         textToSpeech.speak(ttsString, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 
+    public void speakStop() {
+        textToSpeech.stop();
+    }
+
+
     public void shutdown() {
         textToSpeech.shutdown();
     }
