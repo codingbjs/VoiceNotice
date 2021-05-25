@@ -173,6 +173,9 @@ public class MainActivity extends AppCompatActivity {
                 if(param2 != null) {
                     mainBinding.voiceEditText.setText(param2);
                 }
+                break;
+            default:
+                break;
         }
     }
 }
